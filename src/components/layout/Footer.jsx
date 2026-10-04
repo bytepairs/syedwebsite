@@ -182,16 +182,31 @@ export default function Footer({ onOpenLeadModal }) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-[#DFD3BD] flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-4">
-          <p>
-            © {currentYear} {companyInfo.name}. Headquartered in Tamil Nadu (Tindivanam & Krishnagiri). Serving clients across Pan-India & Worldwide.
-          </p>
-          <div className="flex items-center gap-4 text-xs">
+        <div className="mt-12 pt-6 border-t border-[#DFD3BD] flex flex-col md:flex-row items-center justify-between text-xs text-slate-600 gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-center sm:text-left">
+            <p>
+              &copy; {currentYear} {companyInfo.name}. Headquartered in Tamil Nadu (Tindivanam &amp; Krishnagiri). Serving clients Pan-India &amp; Worldwide.
+            </p>
+            <span className="hidden sm:inline text-slate-400">&bull;</span>
+            <p className="inline-flex items-center gap-1.5 font-medium">
+              <span>Powered by</span>
+              <a
+                href="https://www.bytepairs.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 font-semibold underline underline-offset-2 transition-colors inline-flex items-center gap-1"
+              >
+                <span>BytePairs</span>
+                <ExternalLink className="w-3 h-3 text-blue-500" />
+              </a>
+            </p>
+          </div>
+          <div className="flex items-center gap-4 text-xs shrink-0">
             <Link to="/privacy-policy" className="hover:text-slate-800 transition-colors">Privacy</Link>
             <Link to="/terms" className="hover:text-slate-800 transition-colors">Terms</Link>
-            <a href="/sitemap.xml" className="hover:text-slate-800 transition-colors" target="_blank" rel="noopener noreferrer">
+            {/* <a href="/sitemap.xml" className="hover:text-slate-800 transition-colors" target="_blank" rel="noopener noreferrer">
               Sitemap
-            </a>
+            </a> */}
           </div>
         </div>
 
