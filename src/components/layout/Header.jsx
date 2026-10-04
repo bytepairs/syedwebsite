@@ -52,27 +52,27 @@ export default function Header({ onOpenLeadModal }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
-            <Link to="/" className="flex items-center gap-3 group shrink-0 select-none">
-              <div className="w-10 h-10 rounded-xl bg-white/90 border border-[#DFD3BD] p-1.5 flex items-center justify-center group-hover:border-blue-500/40 transition-colors shadow-xs">
+            <Link to="/" className="flex items-center gap-3.5 group shrink-0 select-none">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white border border-[#DFD3BD] p-2 flex items-center justify-center group-hover:border-blue-500/40 group-hover:shadow-card transition-all shadow-xs">
                 <img
                   src="/assets/meeqat-emblem.png"
                   alt="Meeqat Technologies Logo"
                   className="w-full h-full object-contain"
-                  width={36}
-                  height={36}
+                  width={48}
+                  height={48}
                 />
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-base font-bold tracking-tight text-slate-900 font-display">
+                <div className="flex items-center gap-1.5 leading-tight">
+                  <span className="text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 font-display">
                     MEEQAT
                   </span>
-                  <span className="text-base font-bold tracking-wider text-blue-600 font-display">
+                  <span className="text-lg sm:text-xl font-extrabold tracking-wider text-blue-600 font-display">
                     TECHNOLOGIES
                   </span>
                 </div>
-                <span className="text-[10px] tracking-wider uppercase text-slate-500 font-mono">
-                  IT & Cloud Consulting
+                <span className="text-[11px] sm:text-xs tracking-wider uppercase text-slate-500 font-mono font-medium mt-0.5">
+                  IT &amp; Cloud Consulting
                 </span>
               </div>
             </Link>
@@ -261,14 +261,24 @@ export default function Header({ onOpenLeadModal }) {
               <div>
                 {/* Drawer Header */}
                 <div className="flex items-center justify-between pb-4 border-b border-[#DFD3BD] mb-6">
-                  <div className="flex items-center gap-2.5">
-                    <img
-                      src="/assets/meeqat-emblem.png"
-                      alt="Meeqat Logo"
-                      className="w-7 h-7 object-contain"
-                    />
-                    <div className="font-bold text-sm font-display text-slate-900">
-                      MEEQAT TECHNOLOGIES
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-white border border-[#DFD3BD] p-2 flex items-center justify-center shadow-xs">
+                      <img
+                        src="/assets/meeqat-emblem.png"
+                        alt="Meeqat Logo"
+                        className="w-full h-full object-contain"
+                        width={36}
+                        height={36}
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-1 font-bold text-base font-display">
+                        <span className="text-slate-900">MEEQAT</span>
+                        <span className="text-blue-600">TECHNOLOGIES</span>
+                      </div>
+                      <span className="text-[10px] tracking-wider uppercase text-slate-500 font-mono">
+                        IT &amp; Cloud Consulting
+                      </span>
                     </div>
                   </div>
                   <button

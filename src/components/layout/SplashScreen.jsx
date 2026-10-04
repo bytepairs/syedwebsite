@@ -87,23 +87,23 @@ export default function SplashScreen({ onFinish }) {
               initial={{ opacity: 0, scale: 0.94 }}
               animate={stage >= 2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.94 }}
               transition={{ type: 'spring', damping: 20, stiffness: 180 }}
-              className="relative flex items-center justify-center w-20 h-20 mb-5"
+              className="relative flex items-center justify-center w-28 h-28 sm:w-32 sm:h-32 mb-6"
             >
               {/* Outer architectural framing box */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={stage >= 2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="absolute inset-0 rounded-2xl border border-[#DFD3BD] shadow-sm bg-white/90"
+                className="absolute inset-0 rounded-3xl border border-[#DFD3BD] shadow-md bg-white/95"
               />
 
               {/* Meeqat Emblem */}
               <img
                 src="/assets/meeqat-emblem.png"
                 alt="Meeqat Technologies"
-                className="relative z-10 w-12 h-12 object-contain"
-                width={48}
-                height={48}
+                className="relative z-10 w-20 h-20 sm:w-24 sm:h-24 object-contain"
+                width={96}
+                height={96}
               />
             </motion.div>
 
@@ -112,23 +112,23 @@ export default function SplashScreen({ onFinish }) {
               initial={{ opacity: 0, x: -12 }}
               animate={stage >= 3 ? { opacity: 1, x: 0 } : { opacity: 0, x: -12 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="flex items-center gap-2 mb-2"
+              className="flex items-center gap-2.5 mb-2.5"
             >
-              <span className="text-xl font-bold tracking-tight text-slate-900 font-display">
+              <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 font-display">
                 MEEQAT
               </span>
-              <span className="text-xl font-bold tracking-wider text-blue-600 font-display">
+              <span className="text-2xl sm:text-3xl font-extrabold tracking-wider text-blue-600 font-display">
                 TECHNOLOGIES
               </span>
             </motion.div>
 
             {/* Stage 4: Thin traveling architectural accent line */}
-            <div className="relative w-44 h-0.5 bg-slate-100 rounded-full overflow-hidden my-2">
+            <div className="relative w-56 h-0.5 bg-[#DFD3BD]/60 rounded-full overflow-hidden my-2">
               <motion.div
                 initial={{ x: '-100%' }}
                 animate={stage >= 4 ? { x: '100%' } : { x: '-100%' }}
                 transition={{ duration: 0.6, ease: 'easeInOut' }}
-                className="w-16 h-full bg-gradient-to-r from-transparent via-blue-600 to-transparent"
+                className="w-20 h-full bg-gradient-to-r from-transparent via-blue-600 to-transparent"
               />
             </div>
 
@@ -137,7 +137,7 @@ export default function SplashScreen({ onFinish }) {
               initial={{ opacity: 0, y: 6 }}
               animate={stage >= 3 ? { opacity: 1, y: 0 } : { opacity: 0, y: 6 }}
               transition={{ duration: 0.4, delay: 0.15 }}
-              className="text-xs text-slate-500 font-medium tracking-wide"
+              className="text-xs sm:text-sm text-slate-600 font-medium tracking-wide"
             >
               Enterprise IT, Cloud & Digital Systems
             </motion.p>

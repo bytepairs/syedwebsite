@@ -15,27 +15,27 @@ export default function Footer({ onOpenLeadModal }) {
           
           {/* Brand & Verified Presence Column */}
           <div className="lg:col-span-4 space-y-4">
-            <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white border border-[#DFD3BD] p-1.5 flex items-center justify-center shadow-xs">
+            <Link to="/" className="flex items-center gap-3.5 group select-none">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white border border-[#DFD3BD] p-2 sm:p-2.5 flex items-center justify-center shadow-xs group-hover:border-blue-500/40 transition-colors">
                 <img
                   src="/assets/meeqat-emblem.png"
                   alt="Meeqat Technologies Logo"
                   className="w-full h-full object-contain"
-                  width={36}
-                  height={36}
+                  width={56}
+                  height={56}
                 />
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1">
-                  <span className="text-base font-bold tracking-tight text-slate-900 font-display">
+                <div className="flex items-center gap-1.5 leading-tight">
+                  <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 font-display">
                     MEEQAT
                   </span>
-                  <span className="text-base font-bold tracking-wider text-blue-600 font-display">
+                  <span className="text-xl sm:text-2xl font-extrabold tracking-wider text-blue-600 font-display">
                     TECHNOLOGIES
                   </span>
                 </div>
-                <span className="text-[10px] tracking-wider uppercase text-slate-500 font-mono">
-                  IT & Cloud Consulting
+                <span className="text-[11px] sm:text-xs tracking-wider uppercase text-slate-500 font-mono font-medium mt-1">
+                  IT &amp; Cloud Consulting
                 </span>
               </div>
             </Link>

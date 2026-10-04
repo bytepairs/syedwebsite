@@ -99,7 +99,7 @@ export default function HomePage({ onOpenLeadModal }) {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#F5EFE1]">
       
       {/* =========================================================================
           01. HERO (Directive #10 & #62)

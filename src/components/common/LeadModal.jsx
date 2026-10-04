@@ -208,9 +208,26 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
               /* Form State */
               <div>
                 <div className="mb-6 pr-8">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-blue-600 font-mono">
-                    Project Consultation
-                  </span>
+                  <div className="flex items-center gap-3 mb-3.5">
+                    <div className="w-11 h-11 rounded-xl bg-white border border-[#DFD3BD] p-2 flex items-center justify-center shadow-xs shrink-0">
+                      <img
+                        src="/assets/meeqat-emblem.png"
+                        alt="Meeqat Technologies"
+                        className="w-full h-full object-contain"
+                        width={36}
+                        height={36}
+                      />
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-1 font-extrabold text-sm sm:text-base font-display leading-tight">
+                        <span className="text-slate-900">MEEQAT</span>
+                        <span className="text-blue-600">TECHNOLOGIES</span>
+                      </div>
+                      <span className="text-[10px] tracking-wider uppercase text-slate-500 font-mono">
+                        Direct Advisory &bull; Project Consultation
+                      </span>
+                    </div>
+                  </div>
                   <h3 id="lead-modal-title" className="text-2xl font-bold text-slate-900 font-display mt-1">
                     Start a Project with Meeqat
                   </h3>
