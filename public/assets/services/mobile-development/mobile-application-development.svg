@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#E2E8F0" stroke-width="0.8" stroke-dasharray="2 2"/>
+    </pattern>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="20" fill="#FAFAFA" stroke="#E2E8F0"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  
+  <!-- Header Bar -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="24" width="740" height="60" rx="14" fill="url(#headerGrad)" stroke="#E2E8F0"/>
+    <circle cx="58" cy="54" r="5" fill="#EF4444"/>
+    <circle cx="74" cy="54" r="5" fill="#F59E0B"/>
+    <circle cx="90" cy="54" r="5" fill="#10B981"/>
+    <text x="120" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0F172A">Mobile Application Architecture</text>
+    <rect x="580" y="42" width="170" height="24" rx="6" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="665" y="58" font-family="monospace" font-size="11" font-weight="bold" fill="#4F46E5" text-anchor="middle">Flutter / React Native</text>
+  </g>
+
+  <!-- Main Canvas Area -->
+  
+  <g filter="url(#cardShadow)">
+    <rect x="120" y="115" width="220" height="300" rx="28" fill="#FFFFFF" stroke="#0F172A" stroke-width="2"/>
+    <rect x="190" y="125" width="80" height="8" rx="4" fill="#E2E8F0"/>
+    <rect x="145" y="155" width="170" height="50" rx="12" fill="#EEF2FF" stroke="#C7D2FE"/>
+    <text x="230" y="185" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#4338CA" text-anchor="middle">Native Biometrics</text>
+    <rect x="145" y="220" width="170" height="70" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="145" y="305" width="170" height="40" rx="10" fill="#4F46E5"/>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="420" y="115" width="260" height="300" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="445" y="155" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">Offline SQLite Engine</text>
+    <rect x="445" y="175" width="210" height="45" rx="10" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="460" y="202" font-family="monospace" font-size="11" fill="#065F46">Background Delta Sync</text>
+    <rect x="445" y="235" width="210" height="45" rx="10" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="460" y="262" font-family="monospace" font-size="11" fill="#1E40AF">Encrypted Keychain Store</text>
+    <rect x="445" y="295" width="210" height="45" rx="10" fill="#FAF5FF" stroke="#E9D5FF"/>
+    <text x="460" y="322" font-family="monospace" font-size="11" fill="#6B21A8">FCM Push Notification Service</text>
+  </g>
+    
+  
+  <!-- Footer Status Strip -->
+  <rect x="30" y="440" width="740" height="36" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <circle cx="50" cy="458" r="4" fill="#4F46E5"/>
+  <text x="65" y="462" font-family="monospace" font-size="11" fill="#64748B">meeqat.engineering.spec // iOS & Android Cross-Platform Pipeline // Verified Standards</text>
+</svg>

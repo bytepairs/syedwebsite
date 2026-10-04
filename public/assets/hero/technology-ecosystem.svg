@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" fill="none">
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#E2E8F0" stroke-width="0.8" stroke-dasharray="2 2"/>
+    </pattern>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="#FAFAFA" stroke="#E2E8F0"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  
+  <path d="M 400 250 L 220 120 M 400 250 L 580 120 M 400 250 L 160 250 M 400 250 L 640 250 M 400 250 L 220 380 M 400 250 L 580 380" stroke="#93C5FD" stroke-width="1.5" stroke-dasharray="4 4"/>
+  
+  <!-- Central Hub -->
+  <g filter="url(#softShadow)">
+    <rect x="300" y="185" width="200" height="130" rx="20" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+    <rect x="345" y="205" width="110" height="32" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+    <text x="400" y="226" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1D4ED8" text-anchor="middle">MEEQAT CORE</text>
+    <text x="400" y="262" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Enterprise Architecture</text>
+    <text x="400" y="284" font-family="monospace" font-size="10" fill="#64748B" text-anchor="middle">Synchronized Engineering</text>
+  </g>
+
+  <!-- 6 Connected Nodes -->
+  <g filter="url(#softShadow)">
+    <rect x="130" y="80" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="150" y="112" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0F172A">Website Systems</text>
+    <text x="150" y="130" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Fast &amp; Responsive</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="490" y="80" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="510" y="112" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0F172A">Cloud Migration</text>
+    <text x="510" y="130" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">AWS • Azure • GCP</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="60" y="212" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="80" y="244" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0F172A">Mobile Apps</text>
+    <text x="80" y="262" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">iOS &amp; Android</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="560" y="212" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="580" y="244" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0F172A">Cybersecurity</text>
+    <text x="580" y="262" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Least Privilege IAM</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="130" y="344" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="150" y="376" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0F172A">Infrastructure</text>
+    <text x="150" y="394" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Patching &amp; Monitoring</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="490" y="344" width="180" height="76" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="510" y="376" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#0F172A">E-commerce</text>
+    <text x="510" y="394" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Payment &amp; Inventory</text>
+  </g>
+</svg>
