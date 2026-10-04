@@ -71,7 +71,7 @@ export default function SplashScreen({ onFinish }) {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.02 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-white select-none overflow-hidden"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#F5EFE1] select-none overflow-hidden"
         >
           {/* Stage 1: Subtle architectural background grid */}
           <motion.div
@@ -94,7 +94,7 @@ export default function SplashScreen({ onFinish }) {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={stage >= 2 ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="absolute inset-0 rounded-2xl border border-slate-200/90 shadow-sm bg-white/80"
+                className="absolute inset-0 rounded-2xl border border-[#DFD3BD] shadow-sm bg-white/90"
               />
 
               {/* Meeqat Emblem */}

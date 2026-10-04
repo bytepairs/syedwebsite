@@ -18,14 +18,14 @@ export default function InsightsHeroVisual() {
       viewport={defaultViewport}
       className="relative w-full max-w-lg mx-auto"
     >
-      <div className="relative p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-elevated">
+      <div className="relative p-6 sm:p-7 rounded-3xl bg-[#FAF6ED]/95 border border-[#DFD3BD] shadow-elevated">
         
         {/* Header bar */}
-        <div className="flex items-center justify-between pb-3 mb-5 border-b border-slate-200">
+        <div className="flex items-center justify-between pb-3 mb-5 border-b border-[#DFD3BD]">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
             <span className="ml-2 font-mono text-xs text-slate-500 font-medium">
               meeqat.knowledge.base
             </span>
@@ -115,7 +115,7 @@ export default function InsightsHeroVisual() {
         </div>
 
         {/* Footer info strip */}
-        <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] font-mono text-slate-500">
+        <div className="mt-4 pt-3 border-t border-[#DFD3BD] flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span>Authored by Senior Engineers</span>
           <span>Updated Monthly</span>
         </div>

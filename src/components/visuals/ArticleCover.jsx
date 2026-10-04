@@ -11,7 +11,7 @@ export default function ArticleCover({ src, alt, className = '', priority = true
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className={`relative w-full aspect-[16/9] sm:aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-subtle ${className}`}>
+    <div className={`relative w-full aspect-[16/9] sm:aspect-[16/10] rounded-2xl overflow-hidden bg-[#FAF6ED] border border-[#DFD3BD] shadow-subtle ${className}`}>
       {!hasError ? (
         <motion.img
           src={src}

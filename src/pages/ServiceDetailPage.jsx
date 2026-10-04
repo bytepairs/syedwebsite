@@ -58,7 +58,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
     .filter(Boolean);
 
   return (
-    <div className="bg-white pt-28 pb-20">
+    <div className="bg-[#F5EFE1] pt-28 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumb Navigation */}
@@ -70,7 +70,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
         />
 
         {/* 01. BESPOKE SERVICE HERO WITH TAILORED ARCHITECTURE VISUAL */}
-        <section className="py-8 lg:py-12 border-b border-slate-200">
+        <section className="py-8 lg:py-12 border-b border-[#DFD3BD]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             
             {/* Left Content Column */}
@@ -80,7 +80,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
               animate="animate"
               className="lg:col-span-7 flex flex-col items-start"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono font-medium mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBE1CD] border border-[#DFD3BD] text-slate-800 text-xs font-mono font-medium mb-4">
                 <span>{service.categoryLabel}</span>
                 <span>•</span>
                 <span>Meeqat Technologies</span>
@@ -97,7 +97,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
               <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto">
                 <button
                   onClick={() => onOpenLeadModal(service.name)}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-sm transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-button transition-all"
                 >
                   <span>Plan Your {service.name} Project</span>
                   <ArrowRight className="w-4 h-4" />
@@ -128,7 +128,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
             initial="initial"
             whileInView="animate"
             viewport={defaultViewport}
-            className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-subtle"
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card"
           >
             <div>
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold block mb-1">
@@ -139,7 +139,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
               </p>
             </div>
 
-            <div className="border-t md:border-t-0 md:border-l border-slate-200 pt-3 md:pt-0 md:pl-6">
+            <div className="border-t md:border-t-0 md:border-l border-[#DFD3BD] pt-3 md:pt-0 md:pl-6">
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold block mb-1">
                 Target Beneficiaries
               </span>
@@ -148,13 +148,13 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
               </p>
             </div>
 
-            <div className="border-t md:border-t-0 md:border-l border-slate-200 pt-3 md:pt-0 md:pl-6">
+            <div className="border-t md:border-t-0 md:border-l border-[#DFD3BD] pt-3 md:pt-0 md:pl-6">
               <span className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold block mb-1">
                 Core Tech Ecosystem
               </span>
               <div className="flex flex-wrap gap-1 mt-1">
                 {service.techConsiderations.map((tech, idx) => (
-                  <span key={idx} className="text-[11px] font-mono px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">
+                  <span key={idx} className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#FAF6ED] border border-[#DFD3BD] text-slate-800">
                     {tech}
                   </span>
                 ))}
@@ -164,13 +164,13 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
         </section>
 
         {/* 02. PROBLEM STATEMENT & WHAT WE PROVIDE */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-slate-200">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-[#DFD3BD]">
           <motion.div 
             variants={fadeUp}
             initial="initial"
             whileInView="animate"
             viewport={defaultViewport}
-            className="lg:col-span-6 p-7 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between"
+            className="lg:col-span-6 p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card flex flex-col justify-between"
           >
             <div>
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500 block mb-2">
@@ -190,7 +190,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
             initial="initial"
             whileInView="animate"
             viewport={defaultViewport}
-            className="lg:col-span-6 p-7 rounded-2xl bg-white border border-slate-200 shadow-card"
+            className="lg:col-span-6 p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card"
           >
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 block mb-2">
               The Meeqat Solution
@@ -214,7 +214,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
         </section>
 
         {/* 03. 5-STEP EXECUTION PROCESS */}
-        <section className="py-16 border-b border-slate-200">
+        <section className="py-16 border-b border-[#DFD3BD]">
           <div className="max-w-3xl mb-12">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 block mb-2">
               Structured Methodology
@@ -238,10 +238,10 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
               <motion.div
                 key={p.step}
                 variants={staggerItem}
-                className="p-5 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all flex flex-col justify-between"
+                className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-slate-400 transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-9 h-9 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 font-mono text-sm font-bold flex items-center justify-center mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-[#EBE1CD] border border-[#DFD3BD] text-slate-900 font-mono text-sm font-bold flex items-center justify-center mb-3">
                     {p.step}
                   </div>
                   <h3 className="text-sm font-bold text-slate-900 font-display mb-1.5">
@@ -257,7 +257,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
         </section>
 
         {/* 04. EXPECTED DELIVERABLES */}
-        <section className="py-16 border-b border-slate-200">
+        <section className="py-16 border-b border-[#DFD3BD]">
           <div className="max-w-3xl mb-8">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500 block mb-2">
               Tangible Assets
@@ -269,7 +269,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {service.expectedDeliverables.map((del, i) => (
-              <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#DFD3BD] shadow-subtle">
                 <FileCheck className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm text-slate-800 font-medium">{del}</span>
               </div>
@@ -279,7 +279,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
 
         {/* 05. AEO FAQ ACCORDION (Framer Motion Height Animation) */}
         {service.faqs && service.faqs.length > 0 && (
-          <section className="py-16 border-b border-slate-200">
+          <section className="py-16 border-b border-[#DFD3BD]">
             <div className="max-w-3xl mb-10">
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 block mb-2">
                 Questions & Answers
@@ -296,7 +296,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
                   <div
                     key={idx}
                     className={`rounded-2xl border transition-all ${
-                      isOpen ? 'bg-slate-50 border-blue-300 shadow-sm' : 'bg-white border-slate-200 hover:border-slate-300'
+                      isOpen ? 'bg-[#FAF6ED] border-[#DFD3BD] shadow-sm' : 'bg-white border-[#DFD3BD] hover:border-slate-400'
                     }`}
                   >
                     <button
@@ -308,7 +308,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
                       <h3 className="text-base font-bold text-slate-900 font-display leading-snug">
                         {faq.question}
                       </h3>
-                      <div className="w-7 h-7 rounded-lg flex items-center justify-center border shrink-0 bg-white">
+                      <div className="w-7 h-7 rounded-lg flex items-center justify-center border border-[#DFD3BD] shrink-0 bg-white">
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180 text-blue-600' : 'text-slate-400'}`} />
                       </div>
                     </button>
@@ -323,7 +323,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
                           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                           className="overflow-hidden"
                         >
-                          <div className="px-5 pb-5 pt-0 border-t border-slate-200 mt-2 pt-3">
+                          <div className="px-5 pb-5 pt-0 border-t border-[#DFD3BD] mt-2 pt-3">
                             <p className="text-sm font-medium text-slate-900 leading-relaxed mb-2">
                               {faq.directAnswer}
                             </p>
@@ -352,7 +352,7 @@ export default function ServiceDetailPage({ onOpenLeadModal }) {
               {relatedServicesList.map((rel) => (
                 <div
                   key={rel.slug}
-                  className="p-5 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all flex flex-col justify-between"
+                  className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-slate-400 transition-all flex flex-col justify-between"
                 >
                   <div>
                     <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">

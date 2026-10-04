@@ -52,9 +52,9 @@ export default function AboutPage({ onOpenLeadModal }) {
   ];
 
   return (
-    <div className="bg-white pb-20">
+    <div className="bg-[#F5EFE1] pb-20">
       {/* 100% Full-Width Hero Section */}
-      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-white border-b border-slate-200 w-full mb-12">
+      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-[#F5EFE1] border-b border-[#DFD3BD] w-full mb-12">
         {/* Bespoke About Hero Background Banner (100% Size) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <img
@@ -68,8 +68,8 @@ export default function AboutPage({ onOpenLeadModal }) {
             className="w-full h-full object-cover object-center lg:object-right-top opacity-60 sm:opacity-75 transition-opacity duration-700"
           />
           {/* Left Vignette for contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/20 lg:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE1] via-[#F5EFE1]/85 to-[#F5EFE1]/20 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5EFE1]/40 via-transparent to-[#F5EFE1]" />
           <div className="absolute inset-0 bg-grid-light opacity-40" />
         </div>
 
@@ -115,7 +115,7 @@ export default function AboutPage({ onOpenLeadModal }) {
 
       {/* Narrative & Philosophy Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 py-10 border-t border-slate-200">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 py-10 border-t border-[#DFD3BD]">
           <motion.div 
             variants={fadeUp}
             initial="initial"
@@ -148,7 +148,7 @@ export default function AboutPage({ onOpenLeadModal }) {
               <motion.div 
                 key={idx} 
                 variants={staggerItem}
-                className="p-5 rounded-2xl bg-slate-50 border border-slate-200"
+                className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-subtle"
               >
                 <h3 className="text-sm font-bold text-slate-900 font-display mb-2">
                   {pillar.title}
@@ -162,7 +162,7 @@ export default function AboutPage({ onOpenLeadModal }) {
         </div>
 
         {/* How Clients Engage Us */}
-        <section className="py-16 border-t border-slate-200">
+        <section className="py-16 border-t border-[#DFD3BD]">
           <div className="max-w-3xl mb-10">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 block mb-2">
               Commercial Models
@@ -185,7 +185,7 @@ export default function AboutPage({ onOpenLeadModal }) {
             <motion.div 
               variants={staggerItem}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="p-7 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all flex flex-col justify-between"
+              className="p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all flex flex-col justify-between"
             >
               <div>
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded">
@@ -224,10 +224,10 @@ export default function AboutPage({ onOpenLeadModal }) {
             <motion.div 
               variants={staggerItem}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="p-7 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all flex flex-col justify-between"
+              className="p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all flex flex-col justify-between"
             >
               <div>
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700 bg-slate-100 px-2.5 py-1 rounded">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700 bg-[#EDE5D4] px-2.5 py-1 rounded">
                   Model 02
                 </span>
                 <h3 className="text-xl font-bold text-slate-900 font-display mt-3 mb-2">
@@ -263,7 +263,7 @@ export default function AboutPage({ onOpenLeadModal }) {
         </section>
 
         {/* Physical Office Locations */}
-        <section className="py-16 border-t border-slate-200">
+        <section className="py-16 border-t border-[#DFD3BD]">
           <div className="max-w-3xl mb-8">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500 block mb-2">
               Physical Presence
@@ -287,7 +287,7 @@ export default function AboutPage({ onOpenLeadModal }) {
               <motion.div 
                 key={idx} 
                 variants={staggerItem}
-                className="p-6 rounded-2xl bg-slate-50 border border-slate-200"
+                className="p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card"
               >
                 <div className="flex items-center justify-between mb-3">
                   <strong className="text-base text-slate-900 font-display">{loc.name}</strong>

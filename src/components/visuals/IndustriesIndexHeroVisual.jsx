@@ -27,12 +27,12 @@ export default function IndustriesIndexHeroVisual() {
       viewport={defaultViewport}
       className="relative w-full max-w-lg mx-auto"
     >
-      <div className="relative p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-elevated">
-        <div className="flex items-center justify-between pb-3 mb-5 border-b border-slate-200">
+      <div className="relative p-6 sm:p-7 rounded-3xl bg-[#FAF6ED]/95 border border-[#DFD3BD] shadow-elevated">
+        <div className="flex items-center justify-between pb-3 mb-5 border-b border-[#DFD3BD]">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
             <span className="ml-2 font-mono text-xs text-slate-500 font-medium">
               meeqat.industry.domains
             </span>
@@ -62,7 +62,7 @@ export default function IndustriesIndexHeroVisual() {
 
         {/* 7th full-width sector */}
         <div className="mt-2.5">
-          <GlassCard elevation="elevated" className="p-3 flex items-center justify-between border-blue-200">
+          <GlassCard elevation="elevated" className="p-3 flex items-center justify-between border-[#DFD3BD] bg-white">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-md bg-sky-50 text-sky-600 flex items-center justify-center shrink-0">
                 <Rocket className="w-3.5 h-3.5" />
@@ -71,13 +71,13 @@ export default function IndustriesIndexHeroVisual() {
                 Startups &amp; Growing SMEs
               </span>
             </div>
-            <span className="text-[10px] font-mono text-blue-700 bg-blue-50 px-2 py-0.5 rounded">
+            <span className="text-[10px] font-mono text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-200 font-semibold">
               Fast Time to Market
             </span>
           </GlassCard>
         </div>
 
-        <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] font-mono text-slate-500">
+        <div className="mt-4 pt-3 border-t border-[#DFD3BD] flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span className="flex items-center gap-1 text-slate-600">
             <Check className="w-3.5 h-3.5 text-blue-600" />
             Compliance-Ready Blueprints

@@ -39,7 +39,7 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="py-16 bg-slate-50 border-y border-slate-200">
+    <section className="py-16 bg-[#EDE5D4] border-y border-[#DFD3BD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Core Value Pillars Grid with Staggered Motion */}
@@ -57,7 +57,7 @@ export default function TrustSection() {
                 key={idx} 
                 variants={staggerItem}
                 whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="p-5 rounded-2xl bg-white border border-slate-200 shadow-subtle hover:border-slate-300 transition-all"
+                className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-subtle hover:border-[#C8B89C] transition-all"
               >
                 <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-3">
                   <Icon className="w-5 h-5" />
@@ -74,15 +74,15 @@ export default function TrustSection() {
         </motion.div>
 
         {/* Technology Ecosystem Badges */}
-        <div className="pt-6 border-t border-slate-200/80 text-center">
-          <p className="text-xs font-mono uppercase tracking-widest text-slate-500 mb-4 font-medium">
+        <div className="pt-6 border-t border-[#DFD3BD] text-center">
+          <p className="text-xs font-mono uppercase tracking-widest text-slate-600 mb-4 font-medium">
             Engineering Platforms & Frameworks We Work With
           </p>
           <div className="flex flex-wrap items-center justify-center gap-2">
             {techBadges.map((badge, idx) => (
               <span
                 key={idx}
-                className="text-xs font-mono px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 shadow-subtle hover:border-slate-300 transition-colors"
+                className="text-xs font-mono px-3 py-1.5 rounded-lg bg-white border border-[#DFD3BD] text-slate-800 shadow-subtle hover:border-[#C8B89C] transition-colors"
               >
                 {badge}
               </span>

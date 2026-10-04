@@ -108,7 +108,7 @@ export default function HomePage({ onOpenLeadModal }) {
           - Primary CTA: Start a Project | Secondary: Explore Services | WhatsApp: Chat on WhatsApp
           - Hero technology visual: Business technology ecosystem
           ========================================================================= */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-white border-b border-slate-200">
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-[#F5EFE1] border-b border-[#DFD3BD]">
         {/* UI/UX Hero Architectural Background Banner (Directives #12 & #28) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <img
@@ -122,9 +122,9 @@ export default function HomePage({ onOpenLeadModal }) {
             className="w-full h-full object-cover object-center lg:object-right-top opacity-60 sm:opacity-75 transition-opacity duration-700"
           />
           {/* Left Text Vignette: ensures headline & CTAs stay 100% crisp and readable */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/20 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE1] via-[#F5EFE1]/85 to-[#F5EFE1]/20 lg:to-transparent" />
           {/* Top/Bottom Subtle Horizon Fades */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5EFE1]/50 via-transparent to-[#F5EFE1]" />
           {/* Ambient Grid Overlay */}
           <div className="absolute inset-0 bg-grid-light opacity-50" />
         </div>
@@ -171,7 +171,7 @@ export default function HomePage({ onOpenLeadModal }) {
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Link
                     to="/services"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-sm text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 hover:border-slate-400 transition-all shadow-subtle w-full sm:w-auto"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-sm text-slate-700 bg-white border border-[#DFD3BD] hover:bg-[#FAF6ED] hover:border-[#C8B89C] transition-all shadow-subtle w-full sm:w-auto"
                   >
                     <Layers className="w-4 h-4 text-blue-600" />
                     <span>Explore Services</span>
@@ -192,7 +192,7 @@ export default function HomePage({ onOpenLeadModal }) {
               </div>
 
               {/* Highlight Guarantees */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-200 w-full text-xs text-slate-600">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-[#DFD3BD] w-full text-xs text-slate-600">
                 <div className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-blue-600 flex-shrink-0" />
                   <span>100% Code Ownership</span>
@@ -222,7 +222,7 @@ export default function HomePage({ onOpenLeadModal }) {
           - One concise paragraph: ~60-100 words
           - 4 short capability groups in small glass cards: BUILD, MODERNIZE, SECURE, GROW
           ========================================================================= */}
-      <section id="what-we-do" className="py-16 sm:py-20 bg-slate-50/60 border-b border-slate-200 relative overflow-hidden">
+      <section id="what-we-do" className="py-16 sm:py-20 bg-[#EDE5D4] border-b border-[#DFD3BD] relative overflow-hidden">
         <SectionBackground pattern="grid" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -263,10 +263,10 @@ export default function HomePage({ onOpenLeadModal }) {
                   Custom responsive websites, iOS &amp; Android mobile applications, and unified e-commerce platforms.
                 </p>
               </div>
-              <div className="pt-3 border-t border-slate-200/80 flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-600">
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Websites</span>
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Mobile Apps</span>
-                <span className="bg-slate-100 px-2 py-0.5 rounded">E-commerce</span>
+              <div className="pt-3 border-t border-[#DFD3BD] flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-700">
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Websites</span>
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Mobile Apps</span>
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">E-commerce</span>
               </div>
             </GlassSurface>
 
@@ -288,9 +288,9 @@ export default function HomePage({ onOpenLeadModal }) {
                   Staged migrations to AWS/Azure/GCP and automated server patch maintenance routines.
                 </p>
               </div>
-              <div className="pt-3 border-t border-slate-200/80 flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-600">
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Cloud Migration</span>
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Infrastructure</span>
+              <div className="pt-3 border-t border-[#DFD3BD] flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-700">
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Cloud Migration</span>
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Infrastructure</span>
               </div>
             </GlassSurface>
 
@@ -312,9 +312,9 @@ export default function HomePage({ onOpenLeadModal }) {
                   Vulnerability audits, least-privilege IAM rules, and SLA-governed helpdesk incident resolution.
                 </p>
               </div>
-              <div className="pt-3 border-t border-slate-200/80 flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-600">
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Security Audits</span>
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Support SLA</span>
+              <div className="pt-3 border-t border-[#DFD3BD] flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-700">
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Security Audits</span>
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Support SLA</span>
               </div>
             </GlassSurface>
 
@@ -336,9 +336,9 @@ export default function HomePage({ onOpenLeadModal }) {
                   Technical SEO, high-intent search marketing, and Generative Engine Optimization for AI answer engines.
                 </p>
               </div>
-              <div className="pt-3 border-t border-slate-200/80 flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-600">
-                <span className="bg-slate-100 px-2 py-0.5 rounded">Technical SEO</span>
-                <span className="bg-slate-100 px-2 py-0.5 rounded">GEO Search</span>
+              <div className="pt-3 border-t border-[#DFD3BD] flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-700">
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">Technical SEO</span>
+                <span className="bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">GEO Search</span>
               </div>
             </GlassSurface>
           </motion.div>
@@ -350,7 +350,7 @@ export default function HomePage({ onOpenLeadModal }) {
           - Icon, name, one-sentence description, arrow
           - No long descriptions, no bullet checklists
           ========================================================================= */}
-      <section id="services" className="py-20 sm:py-24 bg-white">
+      <section id="services" className="py-20 sm:py-24 bg-[#FAF6ED] border-b border-[#DFD3BD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Engineering Capabilities"
@@ -373,14 +373,14 @@ export default function HomePage({ onOpenLeadModal }) {
                   key={service.slug}
                   variants={staggerItem}
                   whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200 hover:border-slate-300 shadow-card hover:shadow-card-hover transition-all group"
+                  className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#DFD3BD] hover:border-[#C8B89C] shadow-card hover:shadow-card-hover transition-all group"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <div className="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-slate-600 bg-[#F5EFE1] border border-[#DFD3BD]/60 px-2 py-0.5 rounded">
                         {service.category}
                       </span>
                     </div>
@@ -395,7 +395,7 @@ export default function HomePage({ onOpenLeadModal }) {
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-slate-100">
+                  <div className="pt-4 border-t border-[#DFD3BD]/60">
                     <Link
                       to={`/services/${service.slug}`}
                       className="inline-flex items-center justify-between w-full text-xs font-semibold text-slate-900 group-hover:text-blue-600 transition-colors"
@@ -412,7 +412,7 @@ export default function HomePage({ onOpenLeadModal }) {
           <div className="mt-12 text-center">
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-semibold text-slate-700 bg-white hover:bg-[#FAF6ED] border border-[#DFD3BD] transition-colors shadow-xs"
             >
               <span>Explore All 8 Services with Technical Specifications</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -425,7 +425,7 @@ export default function HomePage({ onOpenLeadModal }) {
           04. INDUSTRIES (Directive #22, #25 & #62: 7 compact cards + subtle background)
           - One sentence per industry
           ========================================================================= */}
-      <section id="industries" className="py-20 sm:py-24 bg-slate-50/70 border-t border-slate-200 relative overflow-hidden">
+      <section id="industries" className="py-20 sm:py-24 bg-[#EDE5D4] border-t border-[#DFD3BD] relative overflow-hidden">
         <SectionBackground pattern="grid" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeader
@@ -446,7 +446,7 @@ export default function HomePage({ onOpenLeadModal }) {
                 key={ind.slug}
                 variants={staggerItem}
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all group"
+                className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -465,7 +465,7 @@ export default function HomePage({ onOpenLeadModal }) {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100">
+                <div className="pt-4 border-t border-[#DFD3BD]/60">
                   <Link
                     to={`/industries/${ind.slug}`}
                     className="inline-flex items-center justify-between w-full text-xs font-semibold text-slate-900 group-hover:text-blue-600 transition-colors"
@@ -488,7 +488,7 @@ export default function HomePage({ onOpenLeadModal }) {
       {/* =========================================================================
           06. SELECTED WORK (Directive #28 & #62: Maximum 3 featured verified items)
           ========================================================================= */}
-      <section id="work" className="py-20 sm:py-24 bg-slate-50/70 border-t border-slate-200">
+      <section id="work" className="py-20 sm:py-24 bg-[#FAF6ED] border-t border-[#DFD3BD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Selected Deployments"
@@ -508,7 +508,7 @@ export default function HomePage({ onOpenLeadModal }) {
                 key={project.id}
                 variants={staggerItem}
                 whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200 shadow-card"
+                className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
@@ -525,12 +525,12 @@ export default function HomePage({ onOpenLeadModal }) {
                   </h3>
 
                   <div className="space-y-3 mb-5 text-xs">
-                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                    <div className="p-3 rounded-xl bg-[#F5EFE1] border border-[#DFD3BD]">
                       <span className="font-semibold text-slate-800 block mb-0.5">Challenge:</span>
                       <p className="text-slate-600">{project.challenge}</p>
                     </div>
 
-                    <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                    <div className="p-3 rounded-xl bg-[#F5EFE1] border border-[#DFD3BD]">
                       <span className="font-semibold text-slate-800 block mb-0.5">Solution:</span>
                       <p className="text-slate-600">{project.solution}</p>
                     </div>
@@ -547,11 +547,11 @@ export default function HomePage({ onOpenLeadModal }) {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
+                <div className="pt-4 border-t border-[#DFD3BD]/60 flex flex-wrap gap-1.5">
                   {project.techStack.map((tech) => (
                     <span
                       key={tech}
-                      className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 text-slate-600"
+                      className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#EDE5D4] text-slate-700"
                     >
                       {tech}
                     </span>
@@ -576,7 +576,7 @@ export default function HomePage({ onOpenLeadModal }) {
       {/* =========================================================================
           07. WHY MEEQAT (Directive #29 & #62: 6 strong reasons)
           ========================================================================= */}
-      <section id="why-meeqat" className="py-20 sm:py-24 bg-white border-t border-slate-200">
+      <section id="why-meeqat" className="py-20 sm:py-24 bg-[#F5EFE1] border-t border-[#DFD3BD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="The Enterprise Advantage"
@@ -598,7 +598,7 @@ export default function HomePage({ onOpenLeadModal }) {
                   key={idx}
                   variants={staggerItem}
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                  className="p-6 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all"
+                  className="p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all"
                 >
                   <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center mb-4">
                     <Icon className="w-5 h-5" />
@@ -619,7 +619,7 @@ export default function HomePage({ onOpenLeadModal }) {
       {/* =========================================================================
           08. TECHNICAL INSIGHTS PREVIEW (Directive #31 & #62: 3 articles max with ArticleCover)
           ========================================================================= */}
-      <section id="insights-preview" className="py-20 sm:py-24 bg-slate-50 border-t border-slate-200">
+      <section id="insights-preview" className="py-20 sm:py-24 bg-[#EDE5D4] border-t border-[#DFD3BD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Engineering Insights"
@@ -639,7 +639,7 @@ export default function HomePage({ onOpenLeadModal }) {
                 key={post.slug}
                 variants={staggerItem}
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all group"
+                className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all group"
               >
                 <div>
                   {/* Article Cover Visual (Directive #30) */}
@@ -664,8 +664,8 @@ export default function HomePage({ onOpenLeadModal }) {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="text-slate-400 font-mono text-[11px]">{post.publishedDate}</span>
+                <div className="pt-4 border-t border-[#DFD3BD]/60 flex items-center justify-between text-xs">
+                  <span className="text-slate-500 font-mono text-[11px]">{post.publishedDate}</span>
                   <Link
                     to={`/insights/${post.slug}`}
                     className="font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1"
@@ -693,7 +693,7 @@ export default function HomePage({ onOpenLeadModal }) {
       {/* =========================================================================
           09. AEO FAQ ACCORDION (Directive #32 & #62: 6 questions maximum, concise answers)
           ========================================================================= */}
-      <section id="faq" className="py-20 sm:py-24 bg-white border-t border-slate-200">
+      <section id="faq" className="py-20 sm:py-24 bg-[#F5EFE1] border-t border-[#DFD3BD]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="Frequently Asked Questions"
@@ -708,7 +708,7 @@ export default function HomePage({ onOpenLeadModal }) {
                 <div
                   key={faq.id}
                   className={`rounded-2xl border transition-all duration-200 ${
-                    isOpen ? 'bg-slate-50 border-blue-300 shadow-sm' : 'bg-white border-slate-200 hover:border-slate-300'
+                    isOpen ? 'bg-[#FAF6ED] border-blue-400 shadow-sm' : 'bg-white border-[#DFD3BD] hover:border-[#C8B89C]'
                   }`}
                 >
                   <button
@@ -729,7 +729,7 @@ export default function HomePage({ onOpenLeadModal }) {
                       className={`w-7 h-7 rounded-lg flex items-center justify-center border shrink-0 transition-transform duration-200 ${
                         isOpen
                           ? 'rotate-180 bg-blue-50 border-blue-200 text-blue-600'
-                          : 'bg-slate-50 border-slate-200 text-slate-500'
+                          : 'bg-[#FAF6ED] border-[#DFD3BD] text-slate-600'
                       }`}
                     >
                       <ChevronDown className="w-4 h-4" />
@@ -746,7 +746,7 @@ export default function HomePage({ onOpenLeadModal }) {
                         transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                         className="overflow-hidden"
                       >
-                        <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 border-t border-slate-200/80 mt-2 pt-4">
+                        <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0 border-t border-[#DFD3BD] mt-2 pt-4">
                           {/* Direct AEO Answer (Directive #36) */}
                           <p className="text-sm font-medium text-slate-900 leading-relaxed mb-2">
                             {faq.directAnswer}

@@ -96,7 +96,7 @@ export default function App() {
       {/* Architectural Splash Screen (session-based) */}
       {showSplash && <SplashScreen onFinish={() => setShowSplash(false)} />}
 
-      <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-blue-600/10 selection:text-blue-900 pb-16 lg:pb-0">
+      <div className="min-h-screen bg-[#F5EFE1] text-slate-900 flex flex-col font-sans selection:bg-blue-600/10 selection:text-blue-900 pb-16 lg:pb-0">
         {/* Sticky Header Navbar */}
         <Header onOpenLeadModal={() => openLeadModal()} />
 

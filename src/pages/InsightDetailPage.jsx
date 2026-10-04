@@ -48,7 +48,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
     .filter(Boolean);
 
   return (
-    <div className="bg-white pt-28 pb-20">
+    <div className="bg-[#F5EFE1] pt-28 pb-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumb Navigation */}
@@ -64,10 +64,10 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
           variants={fadeUp}
           initial="initial"
           animate="animate"
-          className="py-8 border-b border-slate-200"
+          className="py-8 border-b border-[#DFD3BD]"
         >
           <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-slate-500 mb-4">
-            <span className="text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-0.5 rounded font-semibold uppercase">
+            <span className="text-slate-800 bg-[#EBE1CD] border border-[#DFD3BD] px-2.5 py-0.5 rounded font-semibold uppercase">
               {insight.category}
             </span>
             <span className="flex items-center gap-1">
@@ -86,7 +86,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
           </h1>
 
           {/* Article Visual Banner (Directive #30) */}
-          <div className="mb-8 rounded-2xl overflow-hidden shadow-subtle border border-slate-200">
+          <div className="mb-8 rounded-2xl overflow-hidden shadow-subtle border border-[#DFD3BD]">
             <ArticleCover
               src={insight.coverImage || '/assets/visuals/insights/web/modern-web-architecture-cover.webp'}
               alt={insight.title}
@@ -94,7 +94,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
             />
           </div>
 
-          <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-sm text-slate-700 leading-relaxed font-medium">
+          <div className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-subtle text-sm text-slate-700 leading-relaxed font-medium">
             <strong className="text-slate-900 font-semibold block mb-1">Executive Summary:</strong>
             {insight.summary}
           </div>
@@ -110,7 +110,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
           initial="initial"
           whileInView="animate"
           viewport={defaultViewport}
-          className="py-12 space-y-10 border-b border-slate-200 text-slate-700 text-base leading-relaxed"
+          className="py-12 space-y-10 border-b border-[#DFD3BD] text-slate-700 text-base leading-relaxed"
         >
           {insight.sections.map((section, idx) => (
             <React.Fragment key={idx}>
@@ -125,7 +125,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
 
               {/* In-Article Architectural Diagram Visual */}
               {insight.diagramImage && idx === 1 && (
-                <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm">
+                <figure className="my-8 rounded-2xl overflow-hidden border border-[#DFD3BD] bg-white shadow-sm">
                   <img
                     src={insight.diagramImage}
                     alt={insight.diagramCaption || "Architecture Topology"}
@@ -136,9 +136,9 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
                     className="w-full h-auto object-cover"
                   />
                   {insight.diagramCaption && (
-                    <figcaption className="p-3.5 text-xs font-mono text-slate-600 bg-white border-t border-slate-100 flex flex-wrap items-center justify-between gap-2">
+                    <figcaption className="p-3.5 text-xs font-mono text-slate-600 bg-[#FAF6ED] border-t border-[#DFD3BD] flex flex-wrap items-center justify-between gap-2">
                       <span>{insight.diagramCaption}</span>
-                      <span className="text-[11px] text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded border border-blue-200 font-semibold">
+                      <span className="text-[11px] text-slate-800 bg-[#EBE1CD] px-2.5 py-0.5 rounded border border-[#DFD3BD] font-semibold">
                         Meeqat Reference Topology
                       </span>
                     </figcaption>
@@ -151,7 +151,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
 
         {/* AEO FAQ Section with Smooth Height Accordion */}
         {insight.faqs && insight.faqs.length > 0 && (
-          <section className="py-12 border-b border-slate-200">
+          <section className="py-12 border-b border-[#DFD3BD]">
             <h2 className="text-2xl font-bold text-slate-900 font-display mb-6">
               Frequently Asked Questions on This Topic
             </h2>
@@ -163,7 +163,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
                   <div
                     key={idx}
                     className={`rounded-2xl border transition-all ${
-                      isOpen ? 'bg-slate-50 border-blue-300' : 'bg-white border-slate-200'
+                      isOpen ? 'bg-[#FAF6ED] border-[#DFD3BD] shadow-sm' : 'bg-white border-[#DFD3BD] hover:border-slate-400'
                     }`}
                   >
                     <button
@@ -175,7 +175,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
                       <h3 className="text-base font-bold text-slate-900 font-display leading-snug">
                         {faq.question}
                       </h3>
-                      <div className="w-7 h-7 rounded-lg flex items-center justify-center border shrink-0 bg-white">
+                      <div className="w-7 h-7 rounded-lg flex items-center justify-center border border-[#DFD3BD] shrink-0 bg-white">
                         <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180 text-blue-600' : 'text-slate-400'}`} />
                       </div>
                     </button>
@@ -190,7 +190,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
                           transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
                           className="overflow-hidden"
                         >
-                          <div className="px-5 pb-5 pt-0 border-t border-slate-200 mt-2 pt-3">
+                          <div className="px-5 pb-5 pt-0 border-t border-[#DFD3BD] mt-2 pt-3">
                             <p className="text-sm font-medium text-slate-900 leading-relaxed mb-2">
                               {faq.directAnswer}
                             </p>
@@ -219,7 +219,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
               {relatedServicesData.map((svc) => (
                 <div
                   key={svc.slug}
-                  className="p-5 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all flex items-center justify-between"
+                  className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-slate-400 transition-all flex items-center justify-between"
                 >
                   <div>
                     <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">
@@ -231,7 +231,7 @@ export default function InsightDetailPage({ onOpenLeadModal }) {
                   </div>
                   <Link
                     to={`/services/${svc.slug}`}
-                    className="p-2 rounded-lg text-blue-600 hover:bg-blue-50"
+                    className="p-2 rounded-lg text-blue-600 hover:bg-[#FAF6ED]"
                   >
                     <ArrowRight className="w-4 h-4" />
                   </Link>

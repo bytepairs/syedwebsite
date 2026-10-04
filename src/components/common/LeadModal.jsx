@@ -125,12 +125,12 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 10 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-xl rounded-2xl bg-white p-6 sm:p-8 shadow-2xl text-left z-10 my-8 border border-slate-200"
+            className="relative w-full max-w-xl rounded-2xl bg-[#FDFBF7] p-6 sm:p-8 shadow-modal text-left z-10 my-8 border border-[#DFD3BD]"
           >
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-[#EDE5D4] transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-label="Close dialog"
             >
               <X className="w-5 h-5" />
@@ -156,8 +156,8 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                 </div>
 
                 {/* Receipt Summary Box */}
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-left space-y-2 text-xs font-mono">
-                  <div className="flex justify-between border-b border-slate-200 pb-2">
+                <div className="p-4 rounded-xl bg-[#F5EFE1] border border-[#DFD3BD] text-left space-y-2 text-xs font-mono">
+                  <div className="flex justify-between border-b border-[#DFD3BD] pb-2">
                     <span className="text-slate-500">Tracking Reference:</span>
                     <span className="text-blue-700 font-bold">{resultData.refId}</span>
                   </div>
@@ -252,7 +252,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                         onChange={handleChange}
                         placeholder="e.g. Anand Kumar"
                         className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all ${
-                          validationErrors.name ? 'border-rose-400 bg-rose-50/20' : 'border-slate-300'
+                          validationErrors.name ? 'border-rose-400 bg-rose-50/20' : 'border-[#DFD3BD]'
                         }`}
                       />
                       {validationErrors.name && (
@@ -273,7 +273,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                         onChange={handleChange}
                         placeholder="anand@company.com"
                         className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all ${
-                          validationErrors.email ? 'border-rose-400 bg-rose-50/20' : 'border-slate-300'
+                          validationErrors.email ? 'border-rose-400 bg-rose-50/20' : 'border-[#DFD3BD]'
                         }`}
                       />
                       {validationErrors.email && (
@@ -294,7 +294,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                         onChange={handleChange}
                         placeholder="+91 98765 43210"
                         className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all ${
-                          validationErrors.phone ? 'border-rose-400 bg-rose-50/20' : 'border-slate-300'
+                          validationErrors.phone ? 'border-rose-400 bg-rose-50/20' : 'border-[#DFD3BD]'
                         }`}
                       />
                       {validationErrors.phone && (
@@ -313,7 +313,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                         value={formData.company}
                         onChange={handleChange}
                         placeholder="e.g. Acme Enterprises"
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                       />
                     </div>
                   </div>
@@ -329,7 +329,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                         required
                         value={formData.service}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                       >
                         <option value="">Select a service</option>
                         {services.map((s) => (
@@ -349,7 +349,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                         name="industry"
                         value={formData.industry}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                       >
                         <option value="">Select industry</option>
                         {industries.map((ind) => (
@@ -371,7 +371,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                       name="timeline"
                       value={formData.timeline}
                       onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                     >
                       <option value="Immediate / Urgent">Immediate / Urgent Requirement</option>
                       <option value="Within 2-4 Weeks">Within 2–4 Weeks</option>
@@ -391,7 +391,7 @@ export default function LeadModal({ isOpen, onClose, initialService = '', initia
                       value={formData.requirements}
                       onChange={handleChange}
                       placeholder="Outline what you are building, existing infrastructure, or technical challenges..."
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
                     />
                   </div>
 

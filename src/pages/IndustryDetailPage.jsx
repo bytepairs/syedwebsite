@@ -39,7 +39,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
     .filter(Boolean);
 
   return (
-    <div className="bg-white pt-28 pb-20">
+    <div className="bg-[#F5EFE1] pt-28 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumb Navigation */}
@@ -51,7 +51,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
         />
 
         {/* 01. INDUSTRY HERO WITH BESPOKE VISUAL */}
-        <section className="py-8 lg:py-12 border-b border-slate-200">
+        <section className="py-8 lg:py-12 border-b border-[#DFD3BD]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             
             {/* Left Content Column */}
@@ -61,7 +61,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
               animate="animate"
               className="lg:col-span-7 flex flex-col items-start"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono font-medium mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBE1CD] border border-[#DFD3BD] text-slate-800 text-xs font-mono font-medium mb-4">
                 <span>{industry.badge}</span>
                 <span>•</span>
                 <span>Sector Specialization</span>
@@ -82,7 +82,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
               <div className="flex flex-col sm:flex-row gap-3.5 w-full sm:w-auto">
                 <button
                   onClick={() => onOpenLeadModal('', industry.name)}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-sm transition-all"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-white bg-slate-900 hover:bg-slate-800 shadow-button transition-all"
                 >
                   <span>Consult on {industry.name} Solutions</span>
                   <ArrowRight className="w-4 h-4" />
@@ -109,14 +109,14 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
         </section>
 
         {/* 02. CHALLENGES & PURPOSE-BUILT SOLUTIONS */}
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-slate-200">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 py-16 border-b border-[#DFD3BD]">
           {/* Challenges Column */}
           <motion.div 
             variants={fadeUp}
             initial="initial"
             whileInView="animate"
             viewport={defaultViewport}
-            className="lg:col-span-6 p-7 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between"
+            className="lg:col-span-6 p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card flex flex-col justify-between"
           >
             <div>
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500 block mb-2">
@@ -142,7 +142,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
             initial="initial"
             whileInView="animate"
             viewport={defaultViewport}
-            className="lg:col-span-6 p-7 rounded-2xl bg-white border border-slate-200 shadow-card"
+            className="lg:col-span-6 p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card"
           >
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600 block mb-2">
               Engineered Solutions
@@ -162,7 +162,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
         </section>
 
         {/* 03. TYPICAL REQUIREMENTS */}
-        <section className="py-16 border-b border-slate-200">
+        <section className="py-16 border-b border-[#DFD3BD]">
           <div className="max-w-3xl mb-8">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500 block mb-2">
               Technical Standards
@@ -174,7 +174,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {industry.typicalRequirements.map((req, i) => (
-              <div key={i} className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3">
+              <div key={i} className="p-4 rounded-xl bg-white border border-[#DFD3BD] shadow-subtle flex items-start gap-3">
                 <ShieldCheck className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm text-slate-800 font-medium">{req}</span>
               </div>
@@ -205,7 +205,7 @@ export default function IndustryDetailPage({ onOpenLeadModal }) {
                 <motion.div
                   key={svc.slug}
                   variants={staggerItem}
-                  className="p-5 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all flex flex-col justify-between"
+                  className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-slate-400 transition-all flex flex-col justify-between"
                 >
                   <div>
                     <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider block mb-1">

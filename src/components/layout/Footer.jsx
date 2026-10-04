@@ -9,14 +9,14 @@ export default function Footer({ onOpenLeadModal }) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-50 text-slate-600 border-t border-slate-200">
+    <footer className="bg-[#EBE1CD] text-slate-700 border-t border-[#DFD3BD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           
           {/* Brand & Verified Presence Column */}
           <div className="lg:col-span-4 space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 p-1.5 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-white border border-[#DFD3BD] p-1.5 flex items-center justify-center shadow-xs">
                 <img
                   src="/assets/meeqat-emblem.png"
                   alt="Meeqat Technologies Logo"
@@ -66,16 +66,16 @@ export default function Footer({ onOpenLeadModal }) {
             </div>
 
             {/* Verified Physical Locations */}
-            <div className="pt-3 space-y-2.5 border-t border-slate-200">
+            <div className="pt-3 space-y-2.5 border-t border-[#DFD3BD]">
               <span className="text-[11px] font-mono uppercase tracking-wider text-slate-900 font-semibold block">
                 Verified Office Locations
               </span>
 
               {companyInfo.locations.map((loc, idx) => (
-                <div key={idx} className="p-3 rounded-xl bg-white border border-slate-200 text-xs">
+                <div key={idx} className="p-3 rounded-xl bg-white border border-[#DFD3BD] text-xs">
                   <div className="flex items-center justify-between mb-1">
                     <strong className="text-slate-900 font-medium">{loc.name}</strong>
-                    <span className="text-[10px] font-mono text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-mono text-slate-700 bg-[#FAF6ED] border border-[#DFD3BD] px-2 py-0.5 rounded">
                       {loc.postalCode}
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export default function Footer({ onOpenLeadModal }) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="mt-12 pt-6 border-t border-[#DFD3BD] flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-4">
           <p>
             © {currentYear} {companyInfo.name}. Headquartered in Tamil Nadu (Tindivanam & Krishnagiri). Serving clients across Pan-India & Worldwide.
           </p>

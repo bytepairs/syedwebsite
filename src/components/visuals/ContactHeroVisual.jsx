@@ -19,10 +19,10 @@ export default function ContactHeroVisual() {
       viewport={defaultViewport}
       className="relative w-full max-w-lg mx-auto"
     >
-      <div className="relative p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-elevated">
+      <div className="relative p-6 sm:p-7 rounded-3xl bg-[#FAF6ED]/95 border border-[#DFD3BD] shadow-elevated">
         
         {/* Architecture header bar */}
-        <div className="flex items-center justify-between pb-3 mb-5 border-b border-slate-200">
+        <div className="flex items-center justify-between pb-3 mb-5 border-b border-[#DFD3BD]">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
             <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
@@ -97,7 +97,7 @@ export default function ContactHeroVisual() {
         </div>
 
         {/* Physical facilities indicator */}
-        <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] font-mono text-slate-500">
+        <div className="mt-4 pt-3 border-t border-[#DFD3BD] flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span className="flex items-center gap-1">
             <MapPin className="w-3.5 h-3.5 text-blue-600" />
             <span>Tindivanam &amp; Krishnagiri Offices</span>

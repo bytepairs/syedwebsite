@@ -17,21 +17,22 @@ export default function PrivacyPolicyPage() {
   }, []);
 
   return (
-    <div className="bg-white pt-28 pb-20">
+    <div className="bg-[#F5EFE1] pt-28 pb-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={[{ name: 'Privacy Policy', path: '/privacy-policy' }]} />
 
-        <div className="py-8 border-b border-slate-200">
-          <span className="text-xs font-mono uppercase tracking-wider text-slate-500 block mb-2 font-medium">
-            Legal & Compliance
-          </span>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display mb-3">
-            Privacy Policy
-          </h1>
-          <p className="text-xs font-mono text-slate-500">
-            Last Updated: February 28, 2025
-          </p>
-        </div>
+        <div className="mt-6 p-8 sm:p-12 rounded-3xl bg-white border border-[#DFD3BD] shadow-card">
+          <div className="pb-8 border-b border-[#DFD3BD]">
+            <span className="text-xs font-mono uppercase tracking-wider text-slate-500 block mb-2 font-medium">
+              Legal &amp; Compliance
+            </span>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-display mb-3">
+              Privacy Policy
+            </h1>
+            <p className="text-xs font-mono text-slate-500">
+              Last Updated: February 28, 2025
+            </p>
+          </div>
 
         <div className="py-10 space-y-8 text-sm text-slate-700 leading-relaxed">
           <section className="space-y-3">
@@ -77,5 +78,6 @@ export default function PrivacyPolicyPage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }

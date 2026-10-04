@@ -23,9 +23,9 @@ export default function IndustriesIndexPage({ onOpenLeadModal }) {
   }, []);
 
   return (
-    <div className="bg-white pb-20">
+    <div className="bg-[#F5EFE1] pb-20">
       {/* 100% Full-Width Hero Section */}
-      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-white border-b border-slate-200 w-full mb-12">
+      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-[#F5EFE1] border-b border-[#DFD3BD] w-full mb-12">
         {/* Bespoke Industries Hero Background Banner (100% Size) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <img
@@ -39,8 +39,8 @@ export default function IndustriesIndexPage({ onOpenLeadModal }) {
             className="w-full h-full object-cover object-center lg:object-right-top opacity-60 sm:opacity-75 transition-opacity duration-700"
           />
           {/* Left Vignette for contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/20 lg:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE1] via-[#F5EFE1]/85 to-[#F5EFE1]/20 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5EFE1]/40 via-transparent to-[#F5EFE1]" />
           <div className="absolute inset-0 bg-grid-light opacity-40" />
         </div>
 
@@ -89,7 +89,7 @@ export default function IndustriesIndexPage({ onOpenLeadModal }) {
               key={ind.slug}
               variants={staggerItem}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all group"
+              className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all group"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
@@ -119,7 +119,7 @@ export default function IndustriesIndexPage({ onOpenLeadModal }) {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-100">
+              <div className="pt-4 border-t border-[#DFD3BD]/60">
                 <Link
                   to={`/industries/${ind.slug}`}
                   className="inline-flex items-center justify-between w-full text-xs font-semibold text-slate-900 group-hover:text-blue-600 transition-colors"

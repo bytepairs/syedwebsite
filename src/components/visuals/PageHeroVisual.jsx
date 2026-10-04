@@ -19,7 +19,7 @@ export default function PageHeroVisual({
     <div className={`relative w-full max-w-xl mx-auto lg:max-w-none ${className}`}>
       {/* Outer Glass Framing Container */}
       <GlassSurface elevation="elevated" rounded="rounded-3xl" className="p-3 sm:p-4 overflow-hidden">
-        <div className={`relative w-full ${aspectRatio} rounded-2xl overflow-hidden bg-slate-50 border border-slate-200/80`}>
+        <div className={`relative w-full ${aspectRatio} rounded-2xl overflow-hidden bg-[#FAF6ED] border border-[#DFD3BD]`}>
           <motion.img
             variants={imageReveal}
             initial="initial"

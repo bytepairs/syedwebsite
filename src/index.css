@@ -6,11 +6,12 @@
   html {
     scroll-behavior: smooth;
     color-scheme: light;
+    background-color: #F5EFE1;
   }
 
   body {
-    background-color: #ffffff;
-    color: #0f172a;
+    background-color: #F5EFE1;
+    color: #1c1917;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -19,35 +20,35 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
-    color: #0f172a;
+    color: #1c1917;
     letter-spacing: -0.02em;
   }
 }
 
-/* Subtle, architectural light grid pattern */
+/* Subtle, architectural light grid pattern calibrated for warm #F5EFE1 theme */
 .bg-grid-light {
   background-size: 32px 32px;
   background-image: 
-    linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
+    linear-gradient(to right, rgba(180, 160, 130, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 160, 130, 0.2) 1px, transparent 1px);
 }
 
 .bg-dot-light {
   background-size: 24px 24px;
-  background-image: radial-gradient(circle, rgba(203, 213, 225, 0.7) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(180, 160, 130, 0.3) 1px, transparent 1px);
 }
 
 /* Enterprise Card Standards */
 .enterprise-card {
   background-color: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #DFD3BD;
   border-radius: 1rem;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .enterprise-card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+  border-color: #C8B89C;
+  box-shadow: 0 12px 30px -10px rgba(44, 38, 28, 0.08), 0 4px 12px -2px rgba(44, 38, 28, 0.04);
   transform: translateY(-2px);
 }
 
@@ -57,14 +58,14 @@
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #EFE7D6;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #DFD3BD;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #C8B89C;
 }
 
 /* Reduced motion preference */

@@ -24,9 +24,9 @@ export default function InsightsIndexPage({ onOpenLeadModal }) {
   }, []);
 
   return (
-    <div className="bg-white pb-20">
+    <div className="bg-[#F5EFE1] pb-24">
       {/* 100% Full-Width Hero Section */}
-      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-white border-b border-slate-200 w-full mb-12">
+      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-[#F5EFE1] border-b border-[#DFD3BD] w-full mb-12">
         {/* Bespoke Insights Hero Background Banner (100% Size) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <img
@@ -40,9 +40,9 @@ export default function InsightsIndexPage({ onOpenLeadModal }) {
             className="w-full h-full object-cover object-center lg:object-right-top opacity-60 sm:opacity-75 transition-opacity duration-700"
           />
           {/* Left Vignette for contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/20 lg:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white" />
-          <div className="absolute inset-0 bg-grid-light opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE1] via-[#F5EFE1]/85 to-[#F5EFE1]/20 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5EFE1]/40 via-transparent to-[#F5EFE1]" />
+          <div className="absolute inset-0 bg-grid-light opacity-30" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -55,7 +55,7 @@ export default function InsightsIndexPage({ onOpenLeadModal }) {
               animate="animate"
               className="lg:col-span-7 flex flex-col items-start"
             >
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono font-medium mb-4">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EBE1CD] border border-[#DFD3BD] text-slate-800 text-xs font-mono font-medium mb-4">
                 <span>Knowledge Base &amp; Advisory</span>
                 <span>•</span>
                 <span>Meeqat Technologies</span>
@@ -90,7 +90,7 @@ export default function InsightsIndexPage({ onOpenLeadModal }) {
               key={post.slug}
               variants={staggerItem}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all group"
+              className="flex flex-col justify-between p-6 sm:p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-slate-400 transition-all group"
             >
               <div>
                 {/* Visual Cover (Directive #30) */}
@@ -118,7 +118,7 @@ export default function InsightsIndexPage({ onOpenLeadModal }) {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+              <div className="pt-4 border-t border-[#DFD3BD]/60 flex items-center justify-between text-xs">
                 <span className="text-slate-400 font-mono text-[11px] flex items-center gap-1">
                   <Calendar className="w-3 h-3" />
                   <span>{post.publishedDate}</span>

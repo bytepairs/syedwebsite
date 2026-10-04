@@ -48,12 +48,12 @@ export default function ServicesIndexHeroVisual() {
       viewport={defaultViewport}
       className="relative w-full max-w-lg mx-auto"
     >
-      <div className="relative p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-elevated">
-        <div className="flex items-center justify-between pb-3 mb-5 border-b border-slate-200">
+      <div className="relative p-6 sm:p-7 rounded-3xl bg-[#FAF6ED]/95 border border-[#DFD3BD] shadow-elevated">
+        <div className="flex items-center justify-between pb-3 mb-5 border-b border-[#DFD3BD]">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
             <span className="ml-2 font-mono text-xs text-slate-500 font-medium">
               meeqat.services.matrix
             </span>
@@ -67,10 +67,10 @@ export default function ServicesIndexHeroVisual() {
           {quadrants.map((q, idx) => {
             const Icon = q.icon;
             return (
-              <GlassCard key={idx} elevation="subtle" className="p-3.5 flex flex-col justify-between">
+              <GlassCard key={idx} elevation="subtle" className="p-3.5 flex flex-col justify-between border-[#DFD3BD] bg-white">
                 <div>
                   <div className="flex items-center justify-between mb-2">
-                    <div className="w-7 h-7 rounded-lg bg-slate-50 flex items-center justify-center text-slate-700">
+                    <div className="w-7 h-7 rounded-lg bg-[#FAF6ED] border border-[#DFD3BD] flex items-center justify-center text-slate-700">
                       <Icon className="w-4 h-4" />
                     </div>
                     <span className={`text-[9px] font-mono font-bold px-1.5 py-0.5 rounded border ${q.color}`}>
@@ -89,7 +89,7 @@ export default function ServicesIndexHeroVisual() {
           })}
         </div>
 
-        <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] font-mono text-slate-500">
+        <div className="mt-4 pt-3 border-t border-[#DFD3BD] flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span className="flex items-center gap-1 text-slate-600">
             <Check className="w-3.5 h-3.5 text-blue-600" />
             Fixed-Milestone &amp; Retainer Models

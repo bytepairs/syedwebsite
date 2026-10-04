@@ -111,10 +111,10 @@ export default function HeroVisual() {
       className="relative w-full max-w-lg mx-auto lg:max-w-none"
     >
       {/* Outer framing card */}
-      <div className="relative rounded-3xl bg-slate-50/80 border border-slate-200/90 p-5 sm:p-7 shadow-elevated backdrop-blur-sm">
+      <div className="relative rounded-3xl bg-[#FAF6ED]/90 border border-[#DFD3BD] p-5 sm:p-7 shadow-elevated backdrop-blur-sm">
         
         {/* Header bar of the architecture window */}
-        <div className="flex items-center justify-between pb-4 mb-5 border-b border-slate-200/80">
+        <div className="flex items-center justify-between pb-4 mb-5 border-b border-[#DFD3BD]">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-slate-300 inline-block" />
             <span className="w-2.5 h-2.5 rounded-full bg-slate-300 inline-block" />
@@ -130,7 +130,7 @@ export default function HeroVisual() {
         </div>
 
         {/* Central Architecture Core */}
-        <div className="relative mb-5 p-4 rounded-2xl bg-white border border-slate-200 text-center shadow-subtle overflow-hidden group">
+        <div className="relative mb-5 p-4 rounded-2xl bg-white border border-[#DFD3BD] text-center shadow-subtle overflow-hidden group">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 via-transparent to-indigo-50/30 opacity-50" />
           <div className="relative z-10">
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600 mb-2 border border-blue-100 shadow-xs">
@@ -165,12 +165,12 @@ export default function HeroVisual() {
                 className={`p-3.5 rounded-xl border transition-all duration-200 cursor-default ${
                   isHovered
                     ? 'bg-white border-blue-500 shadow-md translate-y-[-2px]'
-                    : 'bg-white border-slate-200/90 hover:border-slate-300 shadow-card'
+                    : 'bg-white border-[#DFD3BD] hover:border-[#C8B89C] shadow-card'
                 }`}
               >
                 <div className="flex items-start justify-between mb-2">
                   <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${
-                    isHovered ? 'bg-blue-50 text-blue-600' : 'bg-slate-50 text-slate-700'
+                    isHovered ? 'bg-blue-50 text-blue-600' : 'bg-[#F5EFE1] text-slate-700'
                   }`}>
                     <Icon className="w-4 h-4" />
                   </div>

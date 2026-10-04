@@ -39,7 +39,7 @@ export default function HowWeWork() {
   ];
 
   return (
-    <section id="process" className="py-20 sm:py-24 bg-white border-t border-slate-200">
+    <section id="process" className="py-20 sm:py-24 bg-[#F5EFE1] border-t border-[#DFD3BD]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Execution Methodology"
@@ -50,7 +50,7 @@ export default function HowWeWork() {
         {/* Process Timeline */}
         <div className="relative">
           {/* Subtle horizontal connecting bar on desktop */}
-          <div className="hidden lg:block absolute top-14 left-12 right-12 h-0.5 bg-slate-200/90 -z-0" />
+          <div className="hidden lg:block absolute top-14 left-12 right-12 h-0.5 bg-[#DFD3BD] -z-0" />
 
           <motion.div 
             variants={staggerContainer(0.08, 0.05)}
@@ -66,7 +66,7 @@ export default function HowWeWork() {
                   key={step.num}
                   variants={staggerItem}
                   whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="flex flex-col p-6 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all justify-between"
+                  className="flex flex-col p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all justify-between"
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">

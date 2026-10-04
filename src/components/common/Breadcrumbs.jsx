@@ -16,7 +16,7 @@ export default function Breadcrumbs({ items = [] }) {
         const isLast = index === items.length - 1;
         return (
           <React.Fragment key={index}>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-300 flex-shrink-0" />
+            <ChevronRight className="w-3.5 h-3.5 text-[#DFD3BD] flex-shrink-0" />
             {isLast || !item.path ? (
               <span className="text-slate-900 font-medium truncate max-w-xs">{item.name}</span>
             ) : (

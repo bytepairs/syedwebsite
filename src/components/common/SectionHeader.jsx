@@ -13,7 +13,7 @@ export default function SectionHeader({
   return (
     <div className={`max-w-3xl ${alignClass} mb-12 sm:mb-16 ${className}`}>
       {badge && (
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-mono font-medium mb-3">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EBE1CD] border border-[#DFD3BD] text-slate-800 text-xs font-mono font-medium mb-3">
           <span className="w-1.5 h-1.5 rounded-full bg-blue-600" />
           <span>{badge}</span>
         </div>

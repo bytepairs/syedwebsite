@@ -21,9 +21,9 @@ export default function GlassSurface({
   ...props
 }) {
   const elevationClasses = {
-    subtle: 'shadow-subtle border border-slate-200/80 bg-white/85 backdrop-blur-md',
-    elevated: 'shadow-elevated border border-slate-200/90 bg-white/90 backdrop-blur-lg',
-    flat: 'border border-slate-200/60 bg-white/70 backdrop-blur-sm'
+    subtle: 'shadow-subtle border border-[#DFD3BD]/90 bg-white/90 backdrop-blur-md',
+    elevated: 'shadow-elevated border border-[#DFD3BD] bg-white/95 backdrop-blur-lg',
+    flat: 'border border-[#DFD3BD]/70 bg-white/80 backdrop-blur-sm'
   };
 
   const Component = interactive ? motion.div : as;

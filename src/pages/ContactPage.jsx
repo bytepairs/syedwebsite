@@ -81,9 +81,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="bg-white pb-20">
+    <div className="bg-[#F5EFE1] pb-24">
       {/* 100% Full-Width Hero Section */}
-      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-white border-b border-slate-200 w-full mb-12">
+      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-[#F5EFE1] border-b border-[#DFD3BD] w-full mb-12">
         {/* Bespoke Contact Hero Background Banner (100% Size) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <img
@@ -97,9 +97,9 @@ export default function ContactPage() {
             className="w-full h-full object-cover object-center lg:object-right-top opacity-60 sm:opacity-75 transition-opacity duration-700"
           />
           {/* Left Vignette for contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/20 lg:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white" />
-          <div className="absolute inset-0 bg-grid-light opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE1] via-[#F5EFE1]/85 to-[#F5EFE1]/20 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5EFE1]/40 via-transparent to-[#F5EFE1]" />
+          <div className="absolute inset-0 bg-grid-light opacity-30" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -112,7 +112,7 @@ export default function ContactPage() {
               animate="animate"
               className="lg:col-span-7 flex flex-col items-start"
             >
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-mono font-medium mb-4">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EBE1CD] border border-[#DFD3BD] text-slate-800 text-xs font-mono font-medium mb-4">
                 <span>Direct Technical Inquiry</span>
                 <span>•</span>
                 <span>Meeqat Technologies</span>
@@ -145,8 +145,8 @@ export default function ContactPage() {
             viewport={defaultViewport}
             className="lg:col-span-5 space-y-8"
           >
-            <div className="p-7 rounded-2xl bg-slate-50 border border-slate-200 space-y-6">
-              <h2 className="text-lg font-bold text-slate-900 font-display border-b border-slate-200 pb-3">
+            <div className="p-7 rounded-2xl bg-white border border-[#DFD3BD] shadow-card space-y-6">
+              <h2 className="text-lg font-bold text-slate-900 font-display border-b border-[#DFD3BD] pb-3">
                 Direct Channels
               </h2>
 
@@ -173,7 +173,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-3 pt-3 border-t border-slate-200/80">
+                <div className="flex items-start gap-3 pt-3 border-t border-[#DFD3BD]">
                   <div className="w-9 h-9 rounded-xl bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center shrink-0">
                     <Mail className="w-4 h-4" />
                   </div>
@@ -200,10 +200,10 @@ export default function ContactPage() {
               </h3>
 
               {companyInfo.locations.map((loc, idx) => (
-                <div key={idx} className="p-5 rounded-2xl bg-white border border-slate-200 shadow-card">
+                <div key={idx} className="p-5 rounded-2xl bg-white border border-[#DFD3BD] shadow-card">
                   <div className="flex items-center justify-between mb-2">
                     <strong className="text-sm font-bold text-slate-900">{loc.name}</strong>
-                    <span className="text-[10px] font-mono text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-mono text-slate-800 bg-[#EBE1CD] border border-[#DFD3BD] px-2 py-0.5 rounded">
                       PIN: {loc.postalCode}
                     </span>
                   </div>
@@ -231,7 +231,7 @@ export default function ContactPage() {
             initial="initial"
             whileInView="animate"
             viewport={defaultViewport}
-            className="lg:col-span-7 p-8 rounded-3xl bg-white border border-slate-200 shadow-elevated"
+            className="lg:col-span-7 p-8 rounded-3xl bg-white border border-[#DFD3BD] shadow-elevated"
           >
             {status === 'success' && resultData ? (
               <div className="py-6 text-center space-y-5">
@@ -251,8 +251,8 @@ export default function ContactPage() {
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-left space-y-2 text-xs font-mono max-w-md mx-auto">
-                  <div className="flex justify-between border-b border-slate-200 pb-2">
+                <div className="p-4 rounded-xl bg-[#FAF6ED] border border-[#DFD3BD] text-left space-y-2 text-xs font-mono max-w-md mx-auto">
+                  <div className="flex justify-between border-b border-[#DFD3BD] pb-2">
                     <span className="text-slate-500">Tracking Reference:</span>
                     <span className="text-blue-700 font-bold">{resultData.refId}</span>
                   </div>
@@ -332,7 +332,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="e.g. Ramesh V"
                         className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent ${
-                          validationErrors.name ? 'border-rose-400 bg-rose-50/20' : 'border-slate-300'
+                          validationErrors.name ? 'border-rose-400 bg-rose-50/20' : 'border-[#DFD3BD]'
                         }`}
                       />
                       {validationErrors.name && (
@@ -352,7 +352,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="ramesh@company.com"
                         className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent ${
-                          validationErrors.email ? 'border-rose-400 bg-rose-50/20' : 'border-slate-300'
+                          validationErrors.email ? 'border-rose-400 bg-rose-50/20' : 'border-[#DFD3BD]'
                         }`}
                       />
                       {validationErrors.email && (
@@ -372,7 +372,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         placeholder="+91 98765 43210"
                         className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent ${
-                          validationErrors.phone ? 'border-rose-400 bg-rose-50/20' : 'border-slate-300'
+                          validationErrors.phone ? 'border-rose-400 bg-rose-50/20' : 'border-[#DFD3BD]'
                         }`}
                       />
                       {validationErrors.phone && (
@@ -390,7 +390,7 @@ export default function ContactPage() {
                         value={formData.company}
                         onChange={handleChange}
                         placeholder="e.g. Apex Industrial Systems"
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                       />
                     </div>
                   </div>
@@ -405,7 +405,7 @@ export default function ContactPage() {
                         required
                         value={formData.service}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                       >
                         <option value="">Select primary service</option>
                         {services.map((s) => (
@@ -425,7 +425,7 @@ export default function ContactPage() {
                         name="industry"
                         value={formData.industry}
                         onChange={handleChange}
-                        className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                        className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                       >
                         <option value="">Select industry domain</option>
                         {industries.map((ind) => (
@@ -446,7 +446,7 @@ export default function ContactPage() {
                       name="timeline"
                       value={formData.timeline}
                       onChange={handleChange}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
                     >
                       <option value="Immediate / Urgent">Immediate / Urgent Requirement</option>
                       <option value="Within 2-4 Weeks">Within 2–4 Weeks</option>
@@ -465,7 +465,7 @@ export default function ContactPage() {
                       value={formData.requirements}
                       onChange={handleChange}
                       placeholder="Outline what you need built, existing hosting/servers, current technical issues, or business goals..."
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-[#DFD3BD] text-sm text-slate-900 bg-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-none"
                     />
                   </div>
 

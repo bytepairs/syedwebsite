@@ -4,7 +4,7 @@ import { getWhatsAppLink } from '../../data/company';
 
 export default function MobileStickyBar({ onOpenLeadModal }) {
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-2.5 shadow-lg flex items-center gap-3">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 z-30 bg-[#F5EFE1]/95 backdrop-blur-md border-t border-[#DFD3BD] px-4 py-2.5 shadow-lg flex items-center gap-3">
       {/* WhatsApp Action */}
       <a
         href={getWhatsAppLink('Hello Meeqat Technologies, I would like to discuss a project.')}

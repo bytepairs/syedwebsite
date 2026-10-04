@@ -42,9 +42,9 @@ export default function ServicesIndexPage({ onOpenLeadModal }) {
   ];
 
   return (
-    <div className="bg-white pb-20">
+    <div className="bg-[#F5EFE1] pb-20">
       {/* 100% Full-Width Hero Section */}
-      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-white border-b border-slate-200 w-full mb-12">
+      <section className="relative pt-32 pb-16 lg:pt-36 lg:pb-20 overflow-hidden bg-[#F5EFE1] border-b border-[#DFD3BD] w-full mb-12">
         {/* Bespoke Services Hero Background Banner (100% Size) */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
           <img
@@ -58,8 +58,8 @@ export default function ServicesIndexPage({ onOpenLeadModal }) {
             className="w-full h-full object-cover object-center lg:object-right-top opacity-60 sm:opacity-75 transition-opacity duration-700"
           />
           {/* Left Vignette for contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/20 lg:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5EFE1] via-[#F5EFE1]/85 to-[#F5EFE1]/20 lg:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#F5EFE1]/40 via-transparent to-[#F5EFE1]" />
           <div className="absolute inset-0 bg-grid-light opacity-40" />
         </div>
 
@@ -100,7 +100,7 @@ export default function ServicesIndexPage({ onOpenLeadModal }) {
           {categories.map((cat) => {
             const groupServices = services.filter((s) => s.category === cat.id);
             return (
-              <div key={cat.id} className="pt-8 border-t border-slate-200">
+              <div key={cat.id} className="pt-8 border-t border-[#DFD3BD]">
                 <div className="mb-8">
                   <span className="text-xs font-mono font-semibold uppercase tracking-wider text-blue-600">
                     Category: {cat.id}
@@ -125,7 +125,7 @@ export default function ServicesIndexPage({ onOpenLeadModal }) {
                         key={service.slug}
                         variants={staggerItem}
                         whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                        className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-slate-200 shadow-card hover:border-slate-300 transition-all group"
+                        className="flex flex-col justify-between p-6 rounded-2xl bg-white border border-[#DFD3BD] shadow-card hover:border-[#C8B89C] transition-all group"
                       >
                         <div>
                           <div className="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
@@ -150,7 +150,7 @@ export default function ServicesIndexPage({ onOpenLeadModal }) {
                           </div>
                         </div>
 
-                        <div className="pt-4 border-t border-slate-100">
+                        <div className="pt-4 border-t border-[#DFD3BD]/60">
                           <Link
                             to={`/services/${service.slug}`}
                             className="inline-flex items-center justify-between w-full text-xs font-semibold text-slate-900 group-hover:text-blue-600 transition-colors"

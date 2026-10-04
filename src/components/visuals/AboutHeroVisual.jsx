@@ -19,14 +19,14 @@ export default function AboutHeroVisual() {
       viewport={defaultViewport}
       className="relative w-full max-w-lg mx-auto"
     >
-      <div className="relative p-6 sm:p-7 rounded-3xl bg-slate-50 border border-slate-200 shadow-elevated">
+      <div className="relative p-6 sm:p-7 rounded-3xl bg-[#FAF6ED]/95 border border-[#DFD3BD] shadow-elevated">
         
         {/* Architecture header bar */}
-        <div className="flex items-center justify-between pb-3 mb-5 border-b border-slate-200">
+        <div className="flex items-center justify-between pb-3 mb-5 border-b border-[#DFD3BD]">
           <div className="flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
-            <span className="w-2.5 h-2.5 rounded-full bg-slate-300" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#DFD3BD]" />
             <span className="ml-2 font-mono text-xs text-slate-500 font-medium">
               meeqat.engagement.model
             </span>
@@ -60,14 +60,14 @@ export default function AboutHeroVisual() {
 
           {/* Central Conduit Indicator */}
           <div className="flex items-center justify-center py-1">
-            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-[10px] font-mono text-slate-500 shadow-xs">
+            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#DFD3BD] text-[10px] font-mono text-slate-500 shadow-xs">
               <GitBranch className="w-3 h-3 text-blue-600" />
               <span>Transparent Agile Milestones</span>
             </div>
           </div>
 
           {/* Direct Senior Engineering Desk */}
-          <GlassCard elevation="elevated" className="p-4 border-blue-300 bg-white/95">
+          <GlassCard elevation="elevated" className="p-4 border-[#DFD3BD] bg-white">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2">
                 <Terminal className="w-4 h-4 text-blue-600" />
@@ -83,11 +83,11 @@ export default function AboutHeroVisual() {
               Direct access to software architects and cloud engineers who write production code and manage systems.
             </p>
             <div className="grid grid-cols-2 gap-2 text-[10px] font-mono text-slate-600">
-              <div className="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-1.5">
+              <div className="p-2 rounded-lg bg-[#FAF6ED] border border-[#DFD3BD] flex items-center gap-1.5">
                 <CheckCircle2 className="w-3 h-3 text-emerald-600 shrink-0" />
                 <span>Zero Account Hand-offs</span>
               </div>
-              <div className="p-2 rounded-lg bg-slate-50 border border-slate-100 flex items-center gap-1.5">
+              <div className="p-2 rounded-lg bg-[#FAF6ED] border border-[#DFD3BD] flex items-center gap-1.5">
                 <CheckCircle2 className="w-3 h-3 text-emerald-600 shrink-0" />
                 <span>Version-Controlled Git</span>
               </div>
@@ -95,7 +95,7 @@ export default function AboutHeroVisual() {
           </GlassCard>
 
           {/* Output / Asset Ownership */}
-          <GlassCard elevation="subtle" className="p-4 flex items-center justify-between">
+          <GlassCard elevation="subtle" className="p-4 flex items-center justify-between border-[#DFD3BD] bg-white">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-emerald-50 border border-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
                 <Lock className="w-4 h-4" />
@@ -109,14 +109,14 @@ export default function AboutHeroVisual() {
                 </span>
               </div>
             </div>
-            <span className="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold">
+            <span className="text-[10px] font-mono text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded font-semibold border border-emerald-200">
               Verified
             </span>
           </GlassCard>
         </div>
 
         {/* Footer info strip */}
-        <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[11px] font-mono text-slate-500">
+        <div className="mt-4 pt-3 border-t border-[#DFD3BD] flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span>Registered in Tamil Nadu</span>
           <span>Serving Pan-India &amp; Global</span>
         </div>

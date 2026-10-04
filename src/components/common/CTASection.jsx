@@ -12,7 +12,7 @@ export default function CTASection({
   onOpenLeadModal
 }) {
   return (
-    <section className="py-20 lg:py-24 bg-gradient-to-b from-white via-slate-50 to-slate-100 border-t border-slate-200 relative overflow-hidden">
+    <section className="py-20 lg:py-24 bg-gradient-to-b from-[#F5EFE1] via-[#EFE7D6] to-[#EDE5D4] border-t border-[#DFD3BD] relative overflow-hidden">
       {/* Subtle Architectural Ambient Background */}
       <SectionBackground pattern="radial" />
       <SectionBackground pattern="grid" />
@@ -69,7 +69,7 @@ export default function CTASection({
             </div>
 
             {/* Verification Strip */}
-            <div className="pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-500 font-mono">
+            <div className="pt-6 border-t border-[#DFD3BD] flex flex-wrap items-center justify-center gap-6 text-xs text-slate-600 font-mono">
               <span className="flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5 text-blue-600" />
                 <span>{companyInfo.phoneDisplay}</span>
